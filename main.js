@@ -1,18 +1,13 @@
-/**
- *this dunction will accept details about a person
- *and create an object for them.
- * @param {String} name  the person's full  name 
- * @param {Number} age  the person's age
- * @param {Boolean} isDeveloper  Whether or not the person is a developer
- * @returns {Object}  The person object
+function foo (){}
 
- */
-function createPerson(name, age, isDeveloper){
-    name
-    return {
-        name: name,
-        age: age,
-        isDeveloper
-    } 
-}
- 
+function libro (titulo, autor){}
+
+const hanoi = (discos, de, a, extra) => {
+    if (discos === 1){
+        console.log(`Mover disco 1 de post ${a} a post ${a}`);
+    }else {
+        hanoi (discos - 1, de, extra, a);
+        console.log(`Mover disco ${discos} de post ${de} a post ${a}`);
+        hanoi(discos - 1, extra, a, de);
+    }
+};
